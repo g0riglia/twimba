@@ -18,7 +18,7 @@ document.addEventListener('click', function(e){
         handleReplyBtnClick(e.target.dataset.replyBtn)
     }
     else if(e.target.dataset.delete) {
-        handeDeleteTweet(e.target.dataset.delete)
+        handleDeleteTweet(e.target.dataset.delete)
     }
 })
  
@@ -96,7 +96,7 @@ function handleReplyBtnClick(replyBtnId) {
     }
 }
 
-function handeDeleteTweet(tweetId) {
+function handleDeleteTweet(tweetId) {
     const targetTweetObj = tweetsData.filter(function(tweet) {
         return tweet.uuid === tweetId
     })[0]
