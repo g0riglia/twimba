@@ -71,6 +71,10 @@ button{
     font-weight: 600;
 }
 
+button:hover, button:focus {
+    background-color: #1b7fbd;
+}
+
 /* tweet */
 
 .tweet{
@@ -84,6 +88,13 @@ button{
     display: flex;
     align-items: flex-start;
     gap: 10px;
+    position: relative;
+}
+
+.fa-trash {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .tweet-details{
@@ -116,6 +127,15 @@ button{
     width: 207px;
     font-size: 14px;
     line-height: 20px;
+}
+
+.tweet-comment {
+    font-size: .85rem;
+}
+
+.tweet-reply-btn {
+    padding: 8px 15px;
+    font-size: 1rem;
 }
 
 /* images */
